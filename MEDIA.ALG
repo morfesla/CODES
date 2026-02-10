@@ -9,10 +9,10 @@ Var
    segunda_nota:real
    soma:real
    media:real
-
+   resultado:caracter
 Inicio
 // Seção de Comandos, procedimento, funções, operadores, etc... 
-   escreva("digite a preimeira nota: ")
+   escreva("digite a primeira nota: ")
    leia(primeira_nota)
    
    escreva("digite a segunda nota: ")
@@ -20,8 +20,14 @@ Inicio
    
    soma <- primeira_nota + segunda_nota
    media <- soma / 2
-   
+   se media >= 7 entao
+      resultado <- "Aprovado"
+   senao
+        resultado <- "Reprovado"
+   fimse
+
    escreval("media: ", media)
+   escreval("resultado:", resultado)
    
    
    
